@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Image Gallery</h1>
+        <!-- Category Filter Buttons (Bonus Feature) -->
+        <div class="filter-buttons">
+            <button class="btn active" data-filter="all">All</button>
+            <button class="btn" data-filter="nature">Nature</button>
+            <button class="btn" data-filter="architecture">Architecture</button>
+            <button class="btn" data-filter="travel">Travel</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/10/800/600" alt="Forest and Mountains" class="gallery-img">
+                <div class="caption">Forest and Mountains</div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/id/1011/800/600" alt="Modern Architecture" class="gallery-img">
+                <div class="caption">Modern Architecture</div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="https://picsum.photos/id/1036/800/600" alt="Mountain Road" class="gallery-img">
+                <div class="caption">Mountain Road</div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/28/800/600" alt="Peaceful Forest" class="gallery-img">
+                <div class="caption">Peaceful Forest</div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/id/1048/800/600" alt="Cityscape Buildings" class="gallery-img">
+                <div class="caption">Cityscape Buildings</div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="https://picsum.photos/id/1050/800/600" alt="Scenic Valley View" class="gallery-img">
+                <div class="caption">Scenic Valley View</div>
+            </div>
+             <div class="gallery-item"  >
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/027/716/685/small_2x/colorful-birds-on-cherry-tree-photo.jpg" alt="Beautiful Birds Stock" class="gallery-img">
+                <div class="caption">Beautiful Birds Stock</div>
+            </div>
+            <div class="gallery-item"
+            data-category="architecture">
+                <img src=" https://c.pxhere.com/photos/a8/71/tower_eiffel_tower_the_centre_of_paris_building_architecture_the_design_of_the_city-841094.jpg!d " alt="Eiffel Tower" class="gallery-img">
+                <div class="caption">Eiffel Tower</div>
+            </div>
+            <div class="gallery-item"
+            data-category="travel">
+                <img src="https://images.pexels.com/photos/731217/pexels-photo-731217.jpeg?cs=srgb&dl=air-air-travel-aircraft-731217.jpg&fm=jpg " alt="The view from an airplane window" class="gallery-img">
+                <div class="caption">The view from an airplane window</div>
+            </div>
+            <div class="gallery-item"
+            data-category="travel" >
+                <img src="https://wallpaperaccess.com/full/254381.jpg" alt="The Airoplan" class="gallery-img">
+                <div class="caption">The Airoplan</div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src=" https://wallpapercave.com/wp/wp5626307.jpg" alt="Green Forest" alt="Green Forest" class="gallery-img">
+                <div class="caption">Green Forest</div>
+            </div>
+            <div class="gallery-item"
+            data-category="architecture" >
+                <img src="https://workingwithanarchitect.co.uk/wp-content/uploads/taj-mahal-architect.jpg " alt="Taj Mahal" class="gallery-img">
+                <div class="caption"> Taj Mahal</div>
+            </div>
+             <div class="gallery-item" data-category="nature">
+                <img src=" https://tse2.mm.bing.net/th/id/OIP.BD9cf1eaFBIVQLMXThVtLgHaE6?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="gallery-img" alt="Sky with clouds">
+                <div class="caption">Sky with clouds</div>
+            </div>
+             <div class="gallery-item"
+            data-category="travel" >
+                <img src="https://www.wns.co.za/Portals/0/Images/HeaderBanner/desktop/1087/53/travel_HD.jpg"
+                alt="Travel with Bloones" class="gallery-img">
+                <div class="caption">Travel with Bloones</div>
+            </div>
+            <div class="gallery-item"
+            data-category="architecture" >
+                <img src="https://www.worldatlas.com/upload/60/8a/c7/shutterstock-1406550839.jpg"
+                alt="Ancient Egyptian Pyramids" class="gallery-img">
+                <div class="caption">Ancient Egyptian Pyramids</div>
+            </div>
+            <div class="gallery-item"
+            data-category="nature" >
+                <img src="https://wallpaperaccess.com/full/31201.jpg"
+                alt="The River" class="gallery-img">
+                <div class="caption">The River</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal View -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption"></div>
+        </div>
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
